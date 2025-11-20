@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Cirurgia Bucal Face</title>
+    <link rel="stylesheet" href="{% static 'siteapp/main.css' %}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Clínica de Cirurgia Bucal Face</div>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="#">Profissional</a></li>
+        <li><a href="#">Tratamentos</a></li>
+        <li><a href="#">Sobre</a></li>
+    </ul>
+</header>
+
+<main class="content">
+    <h1>Clínica de Cirurgia Bucal Face</h1>
+    <p>Mais Que Sorriso, Qualidade de Vida!</p>
+</main>
+
+<section class="search-section">
+    <div class="search-container">
+        <input type="text" placeholder="O que deseja encontrar?" class="search-input">
+        <button class="search-button">
+            <img src="{% static 'siteapp/icon/procurar.png' %}" alt="Buscar">
+        </button>
+    </div>
+</section>
+
+</body>
+</html>

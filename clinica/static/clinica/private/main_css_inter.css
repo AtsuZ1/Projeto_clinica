@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.content{
+    margin: 25px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: hsl(200, 18%, 46%);
+    color: white;
+    display: flex;
+    padding: 14px 40px;
+    gap: 35px;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --- AQUI ESTÁ A SOLUÇÃO --- */
+/* ÁREA CENTRALIZADA RESPONSIVA */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* barra fica no centro visível mas não invade conteudo */
+    padding: 20px;
+}
+
+/* BARRA DE PESQUISA */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px 15px;
+    border: 2px solid #ccc;
+    width: 60%;
+    max-width: 650px;
+    min-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.search-container:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-button img {
+    width: 22px;
+    height: 22px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .search-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        width: 90%;
+    }
+}
